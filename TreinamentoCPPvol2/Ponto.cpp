@@ -8,6 +8,7 @@ class Ponto{
 	public:
 
 	Ponto( int xx = 0, int yy =0 ): x(xx), y(yy){}
+	~Ponto(){}
 	void operator ++();// ++P
 	// void operator ++(int).//P++
 	void print() const;
@@ -29,7 +30,10 @@ int main(){
 	A.print();
 	cout<<"B ";
 	B.print();
-	
+	C= &B;
+	++(*C);
+	cout<<"C ";
+	C->print();
 	return 0;
 }
 
