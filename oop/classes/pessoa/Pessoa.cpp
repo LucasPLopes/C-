@@ -1,5 +1,7 @@
 #include "Pessoa.h"
 
+     using namespace std;
+
 Pessoa::Pessoa(){
     this-> nome = "";
 }
