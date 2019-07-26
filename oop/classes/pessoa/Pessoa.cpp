@@ -9,3 +9,8 @@ void Pessoa::setNome(string n){
 string Pessoa::getNome(){
     return this->nome;
 }
+
+string Pessoa::toString(){
+    string str =  "Nome["+this->nome+"]";
+    return str;
+}

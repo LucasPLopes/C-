@@ -11,5 +11,6 @@ class Pessoa{
         Pessoa();
         void setNome(string n);
         string getNome();
+        string toString();
 };
 #endif
