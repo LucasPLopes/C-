@@ -9,7 +9,7 @@ class Pessoa{
         string nome;
     public:
         Pessoa();
-        void setNome();
+        void setNome(string n);
         string getNome();
 };
 #endif
