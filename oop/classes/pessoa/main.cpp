@@ -8,10 +8,10 @@ int main(){
     cout<<"Qual o seu nome: ";
     getline(cin, nome);
 
-    Pessoa *p = new Pessoa();
+    Pessoa *q,*p = new Pessoa();
     p->setNome(nome);
-
-    cout<<"Olá, "<<p->getNome()<<endl;
+    q = p;    
+    cout<<"Olá, "<<q->getNome()<<endl;
 
     return 0;
 }
