@@ -39,11 +39,14 @@ void Animal::print2()const{
 }
 int main(){
     Animal a("cachorro","Romeu","Au-au");
-    Animal clone(a);
+    // Animal clone(a);
+    const Animal clone = a;
 
     a.print();
     cout<<"\nAgora o clone\n";
     clone.print2();
+
+    
 
     cout<<"\nDestructors\n\n";
     return 0;
