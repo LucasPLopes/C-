@@ -1,4 +1,6 @@
 #include<iostream>
+#include<cstdio>
+
 using namespace std;
 
 const string DESC = "Desconhecido";
@@ -17,6 +19,7 @@ public:
     //sobreescrita
     Animal & operator = (const Animal & c); // Operador de cópia
     void print() const;
+    void print2() const;
 };
 
 Animal::Animal(): tipo(DESC), nome(DESC), som(DESC){}//construtor default
@@ -31,14 +34,16 @@ void Animal::print() const{
     cout<<"tipo["+tipo+"]"<<endl;
     cout<<"som["+som+"]"<<endl;
 }
-
+void Animal::print2()const{
+    printf("Esse é o %s, ele é um %s e seu som é %s\n",nome.c_str(),tipo.c_str(),som.c_str());
+}
 int main(){
-    Animal a("Doméstico","Romeu","Au-au");
+    Animal a("cachorro","Romeu","Au-au");
     Animal clone(a);
 
     a.print();
     cout<<"\nAgora o clone\n";
-    clone.print();
+    clone.print2();
 
     cout<<"\nDestructors\n\n";
     return 0;
