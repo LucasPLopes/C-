@@ -28,9 +28,15 @@ public:
 //instância global
 Configuracao * Configuracao::_instancia;
 
+void teremosUmaNovaInst(){
+    Configuracao *setting = Configuracao::getInstance();
+    cout<<"De dentro(): "<<setting->toString()<<endl;     
+}
+
 int main(){
     Configuracao *setting = Configuracao::getInstance();
+    cout<<setting->toString()<<endl;   
 
-    cout<<setting->toString()<<endl;        
+    teremosUmaNovaInst();     
     return 0;
 }
