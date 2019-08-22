@@ -1,0 +1,5 @@
+	Meu diario
+
+1: Treino de jiu-jistu
+1: Leitura da Apostila
+1: Preparar ambiente
